@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_line_words"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/homeim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_background_mainpage" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="200dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/home_image_qiaoqiao" />
+
+                <View
+                    android:id="@+id/v_learningicon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="330dp"
+                    android:layout_marginTop="350dp"
+                    android:clickable="true" />
+
+            </FrameLayout>
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/hometalktv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_line_words"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/home_bubble_messagedialog_9patch"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/ll_line_words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/talkoutbtn"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/home_btn_historyout_unselected" />
+
+            <Button
+                android:id="@+id/homevoicebtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/home_btn_voice" />
+
+            <EditText
+                android:id="@+id/hometalket"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:hint="输入你想说的话"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/homesendbtn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/home_me_btn_send_unselected"
+                android:text="发送"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

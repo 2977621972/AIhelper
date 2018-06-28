@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/leftlayout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="left"
+        >
+
+        <ImageButton
+            android:id="@+id/leftmsgimbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/global_image_head_qiaoqiao"/>
+        <TextView
+            android:id="@+id/leftmsgtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:background="#08e4ec"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rightlayout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/rightmsgtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            />
+        <ImageButton
+            android:id="@+id/rightmsgimbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/global_image_head_man_02"/>
+
+    </LinearLayout>
+</LinearLayout>
